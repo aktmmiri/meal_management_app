@@ -1,0 +1,46 @@
+.top-header {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFCC33;
+  border-bottom: 2px groove #AAAAAA;
+}
+
+.app-name {
+  font-size: 50px;
+  margin-left: 10px;
+  font-family: serif;
+}
+
+.lists {
+  display: flex;
+  align-items: flex-end;
+  list-style: none;
+}
+
+.user-page{
+  text-decoration: none;
+  margin-right: 2vw;
+}
+
+.new-meal{
+  text-decoration: none;
+  margin-right: 2vw;
+}
+
+.logout{
+  text-decoration: none;
+  margin-right: 2vw;
+}
+
+.login{
+  text-decoration: none;
+  margin-right: 2vw;
+}
+
+.sign-up{
+  text-decoration: none;
+  margin-right: 2vw;
+}
