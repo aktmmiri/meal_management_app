@@ -4,8 +4,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #FFCC33;
-  border-bottom: 2px groove #AAAAAA;
+  background-color: #FFFF99;
+  border-bottom: 1px solid #f5f5f5;
 }
 
 .app-name {
