@@ -1,14 +1,17 @@
-<header class='top-header'>
+<div class='top-header'>
   <div class='app-name'>
-  Let's 食事管理！！！
+    <%= link_to "Let's 食事管理！！！", root_path, class: "app-name-content" %>
   </div>
   <div class='navi'>
     <ul class='lists'>
+      <% if user_signed_in? %>
         <li><%= link_to 'マイページ', "#", class: "user-page" %></li>
         <li><%= link_to '新規投稿', "#", class: "new-meal" %></li>
-        <li><%= link_to 'ログアウト', "#", class: "logout" %></li>
-        <li><%= link_to 'ログイン', "#", class: "login" %></li>
-        <li><%= link_to '新規登録', "#", class: "sign-up" %></li>
+        <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li>
+      <% else %>
+        <li><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
+        <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
+      <% end %>
     </ul>
   </div>
-</header>
+</div>
