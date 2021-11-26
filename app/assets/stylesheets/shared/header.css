@@ -11,7 +11,7 @@
 .app-name-content {
   font-size: 50px;
   margin-left: 10px;
-  font-family: serif;
+  font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
   color: #000033;
 }
@@ -19,35 +19,37 @@
 .lists {
   display: flex;
   align-items: flex-end;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
   list-style: none;
 }
 
-.user-page{
+.user-page {
   text-decoration: none;
-  margin-right: 2vw;
+  margin-right: 3vw;
   color: #000033;
 }
 
-.new-meal{
+.new-meal-link {
   text-decoration: none;
-  margin-right: 2vw;
+  margin-right: 3vw;
   color: #000033;
 }
 
-.logout{
+.logout {
   text-decoration: none;
-  margin-right: 2vw;
+  margin-right: 3vw;
   color: #000033;
 }
 
-.login{
+.login {
   text-decoration: none;
-  margin-right: 2vw;
+  margin-right: 3vw;
   color: #000033;
 }
 
-.sign-up{
+.sign-up {
   text-decoration: none;
-  margin-right: 2vw;
+  margin-right: 3vw;
   color: #000033;
 }
