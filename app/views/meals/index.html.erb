@@ -1,14 +1,40 @@
 <%= render 'shared/header' %>
 
-<%# 一覧表示 %>
-<div class='meal'>
-  <div class='meal-image'>
+<div class='top-page'>
+  <%# アプリ説明 %>
+  <div class='top-app-info'>
+    <p class='top-info-one'>本当に痩せたいなら</p>
+    <p class='top-info-two'>自分の食事を知ろう！</p>
   </div>
-  <div class='meal-name'>
+  <%# /アプリ説明 %>
+  <%# 一覧表示 %>
+  <div class='meal-title'>
+    みんなの食事一覧
   </div>
-  <div class='meal-username'>
-  </div>
-  <div class='meal-favo'>
-  </div>
+  <ul class='meal-lists'>
+    <% @meals.each do |meal| %>
+      <li class='list'>
+        <%# link_to item_path(item.id) do %>
+        <div class='list-left'>
+          <div class='meal-img-content'>
+            <%= image_tag meal.image, class: "meal-img" %>
+          </div>
+        </div>
+        <div class='list-right'>
+          <p class='meal-name'>
+            <%= meal.name %>
+          </p>
+          <div class='meal-info'>
+            <span><%= meal.info %></span>
+            <%#<div class='star-btn'>
+              <%= image_tag "star.png", class:"star-icon" %>
+              <%#<span class='star-count'>0</span>
+            </div>%>
+          </div>
+        </div>
+        <%# end %>
+      </li>
+    <% end %>
+  </ul>
+  <%# /一覧表示 %>
 </div>
-<%# /一覧表示 %>

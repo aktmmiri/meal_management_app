@@ -13,7 +13,7 @@
   margin-left: 10px;
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
-  color: #000033;
+  color: #222222;
 }
 
 .lists {
@@ -27,29 +27,29 @@
 .user-page {
   text-decoration: none;
   margin-right: 3vw;
-  color: #000033;
+  color: #222222;
 }
 
 .new-meal-link {
   text-decoration: none;
   margin-right: 3vw;
-  color: #000033;
+  color: #222222;
 }
 
 .logout {
   text-decoration: none;
   margin-right: 3vw;
-  color: #000033;
+  color: #222222;
 }
 
 .login {
   text-decoration: none;
   margin-right: 3vw;
-  color: #000033;
+  color: #222222;
 }
 
 .sign-up {
   text-decoration: none;
   margin-right: 3vw;
-  color: #000033;
+  color: #222222;
 }
