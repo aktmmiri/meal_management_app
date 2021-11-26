@@ -1,5 +1,4 @@
 class MealsController < ApplicationController
-
   def index
   end
 
