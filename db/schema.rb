@@ -37,7 +37,7 @@ ActiveRecord::Schema.define(version: 2021_11_25_093553) do
     t.string "name", null: false
     t.integer "amount", null: false
     t.text "info"
-    t.integer "time_id", null: false
+    t.integer "meal_time_id", null: false
     t.integer "calorie", null: false
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false

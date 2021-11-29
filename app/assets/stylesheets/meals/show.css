@@ -1,0 +1,145 @@
+.show-page {
+  width: 100vw;
+  height: 100vh;
+  background-color: #FFFF99;
+  overflow: scroll;
+  font-family: "Source Sans Pro", Helvetica, Arial, "æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“", "YuGothic", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", sans-serif;
+}
+
+.show-top-content {
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 30px 0;
+}
+
+.show-second-content {
+  width: 70%;
+  height: 70%;
+  margin: 0 auto 20px;
+}
+
+.show-image-content {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.show-image {
+  width: auto;
+  height: 100%;
+}
+
+.show-third-content {
+  width: 70%;
+  height: 40%;
+  margin: 0 auto;
+}
+
+.show-date {
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  font-size: 20px;
+}
+
+.show-info-contents {
+  width: 100%;
+  height: 90%;
+  display: flex;
+}
+
+.show-info-left {
+  width: 50%;
+  height: 100%;
+  border: 1px solid black;
+  display: flex;
+}
+
+.show-table {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.show-meal-data {
+  width: 100%;
+  height: 20%;
+  color: #222222;
+  background-color: #FFFFDD;
+  border: 1px solid black;
+  padding-top: 20px;
+  font-size: 16px;
+}
+
+
+.show-info-right {
+  width: 50%;
+  height: 100%;
+  border: 2px solid black;
+  background-color: #FFFFDD;
+  overflow: scroll;
+}
+
+.show-forth-content {
+  width: 40%;
+  height: 20%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.show-edit {
+  width: 25%;
+  height: 40%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 15px;
+  background-color: #FF6928;
+  border-radius: 20px;
+}
+
+.edit-btn {
+  color: #fff;
+  text-decoration: none;
+  font-size: 35px;
+}
+
+.show-delete {
+  width: 25%;
+  height: 40%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 15px;
+  background-color: #CCCCCC;
+  border-radius: 20px;
+}
+
+.delete-btn {
+  color: #222222;
+  text-decoration: none;
+  font-size: 35px;
+}
+
+.show-fifth-content {
+  width: 70%;
+  height: 40%;
+  background-color: cyan;
+  margin: 0 auto;
+  display: flex;
+}
+
+.show-comment-left {
+  width: 50%;
+  height: 100%;
+  background-color: ghostwhite;
+}
+
+.show-comment-right {
+  width: 50%;
+  height: 100%;
+  background-color: lightcoral;
+}
