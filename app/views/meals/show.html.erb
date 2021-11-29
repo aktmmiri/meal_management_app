@@ -1,0 +1,52 @@
+<%= render 'shared/header' %>
+
+<div class='show-page'>
+  <div class='show-top-content'>
+    <%= "#{@meal.name}の詳細ページ" %>
+  </div>
+  <div class='show-second-content'>
+    <div class='show-image-content'>
+      <%= image_tag @meal.image, class:'show-image' %>
+    </div>
+  </div>
+  <div class='show-third-content'>
+    <div class='show-date'>
+      <%= @meal.created_at.strftime("投稿日：%Y年%m月%d日") %>
+    </div>
+    <div class='show-info-contents'>
+      <div class='show-info-left'>
+        <div class='show-table'>
+          <div class='show-meal-data'>食事名</div>
+          <div class='show-meal-data'>ユーザー名</div>
+          <div class='show-meal-data'>時間帯</div>
+          <div class='show-meal-data'>量</div>
+          <div class='show-meal-data'>カロリー</div>
+        </div>
+        <div class='show-table'>
+          <div class='show-meal-data'><%= @meal.name %></div>
+          <div class='show-meal-data'><%= @meal.user.nickname %></div>
+          <div class='show-meal-data'><%= @meal.meal_time.name %></div>
+          <div class='show-meal-data'><%= "#{@meal.amount}g" %></div>
+          <div class='show-meal-data'><%= "#{@meal.calorie}kcal" %></div>
+        </div>
+      </div>
+      <div class='show-info-right'>
+        <%= @meal.info %>
+      </div>
+    </div>
+  </div>
+  <div class='show-forth-content'>
+    <div class='show-edit'>
+    <%= link_to "編集", "#", class:'edit-btn' %>
+    </div>
+    <div class='show-delete'>
+    <%= link_to "削除", "#", class:'delete-btn' %>
+    </div>
+  </div>
+  <div class='show-fifth-content'>
+    <div class='show-comment-left'>
+    </div>
+    <div class='show-comment-right'>
+    </div>
+  </div>
+</div>

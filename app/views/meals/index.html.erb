@@ -14,10 +14,9 @@
   <ul class='meal-lists'>
     <% @meals.each do |meal| %>
       <li class='list'>
-        <%# link_to item_path(item.id) do %>
         <div class='list-left'>
           <div class='meal-img-content'>
-            <%= image_tag meal.image, class: "meal-img" %>
+            <%= link_to image_tag(meal.image, class: "meal-img"), meal_path(meal.id) %>
           </div>
         </div>
         <div class='list-right'>
