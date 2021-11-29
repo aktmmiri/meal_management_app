@@ -54,7 +54,7 @@
         食事の時間帯
         <span class="indispensable">必須</span>
       </div>
-      <%= f.collection_select(:time_id, MealTime.all, :id, :name, {}, {class:"select-box", id:"meal-time"}) %>
+      <%= f.collection_select(:meal_time_id, MealTime.all, :id, :name, {}, {class:"select-box", id:"meal-time"}) %>
     </div>
     <%# /食事内容 %>
 

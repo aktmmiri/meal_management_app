@@ -9,6 +9,6 @@ class Meal < ApplicationRecord
     validates :name
     validates :amount_before_type_cast, format: { with: /\A[0-9]+\z/, allow_blank: true, message: 'は半角数字で入力してください' }
     validates :calorie_before_type_cast, format: { with: /\A[0-9]+\z/, allow_blank: true, message: 'は半角数字で入力してください' }
-    validates :time_id, numericality: { other_than: 1, message: 'を選択してください' }
+    validates :meal_time_id, numericality: { other_than: 1, message: 'を選択してください' }
   end
 end
