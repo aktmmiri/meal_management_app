@@ -23,6 +23,7 @@ class MealsController < ApplicationController
   end
 
   def edit
+    redirect_to root_path if current_user.id != @meal.user_id
   end
 
   def update
