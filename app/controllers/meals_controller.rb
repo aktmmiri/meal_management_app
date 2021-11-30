@@ -1,6 +1,6 @@
 class MealsController < ApplicationController
-  before_action :authenticate_user!, only: :new
-  before_action :set_meal, only: [:show, :edit, :update]
+  before_action :authenticate_user!, only: [:new, :edit, :destroy]
+  before_action :set_meal, only: [:show, :edit, :update, :destroy]
 
   def index
     @meals = Meal.includes(:user).order('created_at DESC')
@@ -31,6 +31,15 @@ class MealsController < ApplicationController
       redirect_to meal_path(@meal.id)
     else
       render :edit
+    end
+  end
+
+  def destroy
+    if current_user.id == @meal.user_id
+      @meal.destroy
+      redirect_to root_path
+    else
+      render :show
     end
   end
 
