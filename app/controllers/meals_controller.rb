@@ -35,7 +35,12 @@ class MealsController < ApplicationController
   end
 
   def destroy
-
+    if current_user.id == @meal.user_id
+      @meal.destroy
+      redirect_to root_path
+    else
+      render :show
+    end
   end
 
   private
