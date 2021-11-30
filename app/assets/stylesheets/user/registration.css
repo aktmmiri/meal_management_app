@@ -46,7 +46,7 @@
 }
 
 .indispensable {
-  background: #ea352d;
+  background: #FF6928;
   margin-left: 8px;
   padding: 3px;
   border-radius: 2px;
@@ -133,8 +133,8 @@
 
 .register-red-btn {
   width: 100%;
-  background: #ea352d;
-  border: 1px solid #ea352d;
+  background: #FF6928;
+  border: 1px solid #FF6928;
   color: #fff;
   line-height: 48px;
   font-size: 14px;

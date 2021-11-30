@@ -1,0 +1,51 @@
+.edit-meal {
+  background-color: #FFFF99;
+  font-family: "Source Sans Pro", Helvetica, Arial, "æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“", "YuGothic", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", sans-serif;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-width: 500px;
+}
+
+.edit-meal-main {
+  background-color: #FFFF99;
+  width: 70vw;
+  min-width: 450px;
+  padding: 10vh 15vw;
+}
+
+.edit-meal-title {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3vh;
+}
+
+.edit-meal-contents {
+  padding: 2vh 0;
+}
+
+.edit-meals-second{
+  padding: 2vh 0;
+  width: 50%;
+}
+
+.edit-meal-number{
+  display: flex;
+}
+
+.edit-btn-content {
+  width: 40%;
+  margin: 25px auto;
+  text-align: center;
+  background-color: #FF773E;
+  border-radius: 20px;
+  border-bottom: solid 4px #FF4F02;
+}
+
+.edit-btn {
+  font-size: 35px;
+  border: none;
+  background-color: #FF773E;
+}

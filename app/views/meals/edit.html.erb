@@ -1,8 +1,8 @@
-<div class="new-meal">
+<div class="edit-meal">
   <%= render 'shared/header' %>
-  <div class="new-meal-main">
-    <h2 class="new-meal-title">新規食事情報入力</h2>
-    <%= form_with model: @meal, url: meals_path, local: true do |f| %>
+  <div class="edit-meal-main">
+    <h2 class="edit-meal-title">新規食事情報入力</h2>
+    <%= form_with model: @meal, local: true do |f| %>
 
     <%= render partial: 'shared/error_messages', locals: {model: @meal} %>
 
@@ -16,12 +16,12 @@
         <p>
           クリックしてファイルをアップロード
         </p>
-        <%= f.file_field :image, id:"new-meal-image" %>
+        <%= f.file_field :image, id:"edit-meal-image" %>
       </div>
     </div>
     <%# /食事画像 %>
     <%# 食事内容 %>
-    <div class="new-meal-contents">
+    <div class="edit-meal-contents">
       <div class="bold-text">
         食事名
         <span class="indispensable">必須</span>
@@ -33,15 +33,15 @@
       </div>
       <%= f.text_area :info, class:"meals-text", id:"meal-info", placeholder:"食事の説明（1,000文字まで）使った食材やレシピ、注意点などを記入してください。" ,rows:"7" ,maxlength:"1000" %>
     </div>
-    <div class='new-meal-number'>
-      <div class='new-meals-second'>
+    <div class='edit-meal-number'>
+      <div class='edit-meals-second'>
         <div class='bold-text'>
           食事量（g）
           <span class="indispensable">必須</span>
         </div>
         <%= f.text_field :amount, class:'amount-calorie-number', id:'meal-amount', placeholder:"例) 150" %>
       </div>
-      <div class='new-meals-second'>
+      <div class='edit-meals-second'>
         <div class='bold-text'>
           カロリー（kcal）
           <span class="indispensable">必須</span>
@@ -59,11 +59,11 @@
     <%# /食事内容 %>
 
     <%# 投稿ボタン %>
-    <div class='new-btn-content'>
-      <%= f.submit "投稿する", class:'new-btn' %>
+    <div class='edit-btn-content'>
+      <%= f.submit "編集する", class:'edit-btn' %>
     </div>
     <div class='back-btn-content'>
-      <%= link_to "もどる", root_path, class:'back-btn' %>
+      <%= link_to "もどる", meal_path(@meal.id), class:'back-btn' %>
     </div>
     <%# /投稿ボタン %>
     <% end %>
