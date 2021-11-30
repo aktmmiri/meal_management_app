@@ -59,9 +59,11 @@
     <%# /食事内容 %>
 
     <%# 投稿ボタン %>
-    <div class="post-btn-contents">
-      <%= f.submit "投稿する" ,class:"post-btn" %>
-      <%= link_to 'もどる', root_path, class:"back-btn" %>
+    <div class='new-btn-content'>
+      <%= f.submit "投稿する", class:'new-btn' %>
+    </div>
+    <div class='back-btn-content'>
+      <%= link_to "もどる", root_path, class:'back-btn' %>
     </div>
     <%# /投稿ボタン %>
     <% end %>

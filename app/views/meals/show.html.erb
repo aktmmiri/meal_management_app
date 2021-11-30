@@ -31,13 +31,14 @@
         </div>
       </div>
       <div class='show-info-right'>
+        <p class='info-header'>説明</p>
         <%= @meal.info %>
       </div>
     </div>
   </div>
   <div class='show-forth-content'>
     <div class='show-edit'>
-    <%= link_to "編集", "#", class:'edit-btn' %>
+    <%= link_to "編集", edit_meal_path(@meal.id), class:'edit-btn' %>
     </div>
     <div class='show-delete'>
     <%= link_to "削除", "#", class:'delete-btn' %>
