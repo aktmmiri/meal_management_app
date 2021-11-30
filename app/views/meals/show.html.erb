@@ -42,7 +42,7 @@
     <%= link_to "編集", edit_meal_path(@meal.id), class:'edit-btn' %>
     </div>
     <div class='show-delete'>
-    <%= link_to "削除", "#", class:'delete-btn' %>
+    <%= link_to "削除", meal_path(@meal.id), method: :delete, class:'delete-btn' %>
     </div>
   </div>
   <% end %>
