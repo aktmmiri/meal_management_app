@@ -1,6 +1,6 @@
 class MealsController < ApplicationController
-  before_action :authenticate_user!, only: :new
-  before_action :set_meal, only: [:show, :edit, :update]
+  before_action :authenticate_user!, only: [:new, :edit, :destroy]
+  before_action :set_meal, only: [:show, :edit, :update, :destroy]
 
   def index
     @meals = Meal.includes(:user).order('created_at DESC')
@@ -32,6 +32,10 @@ class MealsController < ApplicationController
     else
       render :edit
     end
+  end
+
+  def destroy
+
   end
 
   private
