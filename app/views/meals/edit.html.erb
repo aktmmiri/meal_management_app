@@ -1,0 +1,71 @@
+<div class="edit-meal">
+  <%= render 'shared/header' %>
+  <div class="edit-meal-main">
+    <h2 class="edit-meal-title">新規食事情報入力</h2>
+    <%= form_with model: @meal, local: true do |f| %>
+
+    <%= render partial: 'shared/error_messages', locals: {model: @meal} %>
+
+    <%# 食事画像 %>
+    <div class="img-upload">
+      <div class="bold-text">
+        食事の画像
+        <span class="arbitrary">任意</span>
+      </div>
+      <div class="click-upload">
+        <p>
+          クリックしてファイルをアップロード
+        </p>
+        <%= f.file_field :image, id:"edit-meal-image" %>
+      </div>
+    </div>
+    <%# /食事画像 %>
+    <%# 食事内容 %>
+    <div class="edit-meal-contents">
+      <div class="bold-text">
+        食事名
+        <span class="indispensable">必須</span>
+      </div>
+      <%= f.text_field :name, class:"meals-text", id:"meal-name", placeholder:"例) オムライス", maxlength:"40" %>
+      <div class="bold-text">
+        食事の説明
+        <span class="arbitrary">任意</span>
+      </div>
+      <%= f.text_area :info, class:"meals-text", id:"meal-info", placeholder:"食事の説明（1,000文字まで）使った食材やレシピ、注意点などを記入してください。" ,rows:"7" ,maxlength:"1000" %>
+    </div>
+    <div class='edit-meal-number'>
+      <div class='edit-meals-second'>
+        <div class='bold-text'>
+          食事量（g）
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_field :amount, class:'amount-calorie-number', id:'meal-amount', placeholder:"例) 150" %>
+      </div>
+      <div class='edit-meals-second'>
+        <div class='bold-text'>
+          カロリー（kcal）
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_field :calorie, class:'amount-calorie-number', id:'meal-calorie', placeholder:"例) 750" %>
+      </div>
+    </div>
+    <div class="meals-detail">
+      <div class="bold-text">
+        食事の時間帯
+        <span class="indispensable">必須</span>
+      </div>
+      <%= f.collection_select(:meal_time_id, MealTime.all, :id, :name, {}, {class:"select-box", id:"meal-time"}) %>
+    </div>
+    <%# /食事内容 %>
+
+    <%# 投稿ボタン %>
+    <div class='edit-btn-content'>
+      <%= f.submit "編集する", class:'edit-btn' %>
+    </div>
+    <div class='back-btn-content'>
+      <%= link_to "もどる", meal_path(@meal.id), class:'back-btn' %>
+    </div>
+    <%# /投稿ボタン %>
+    <% end %>
+  </div>
+</div>
