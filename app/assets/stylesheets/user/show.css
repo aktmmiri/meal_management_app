@@ -1,0 +1,51 @@
+.user-page {
+  height: 100vh;
+  width: 100vw;
+  background-color: #FFFF99;
+  overflow: scroll;
+  font-family: "Source Sans Pro", Helvetica, Arial, "æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“", "YuGothic", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", sans-serif;
+}
+
+.user-page-contents {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.side-contents {
+  height: 100%;
+  width: 35%;
+}
+
+.user-profile {
+  width: 100%;
+  height: 50%;
+  background-color: lightskyblue;
+}
+
+.user-metabolism {
+  width: 100%;
+  height: 50%;
+  background-color: lightpink;
+}
+
+.main-contents {
+  height: 100%;
+  width: 65%;
+}
+
+.main-tabs {
+  width: 100%;
+  height: 10%;
+  background-color: lightcoral;
+}
+
+.tab {
+  list-style: none;
+}
+
+.main-meals {
+  width: 100%;
+  height: 90%;
+  background-color: lightgreen;
+}
