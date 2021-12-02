@@ -1,6 +1,6 @@
 $(function() {
   // ↓タブをクリックした時の処理↓
-  $('.tab').click(function(){
+  $(document).on('click', '.tab', function(){
       // ↓現在アクティブなタブを切り替え↓
       $('.tab-active').removeClass('tab-active');
       // ↓タブをアクティブにする↓
