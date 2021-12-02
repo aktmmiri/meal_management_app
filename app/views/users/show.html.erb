@@ -4,15 +4,21 @@
   <div class='user-page-contents'>
     <div class='side-contents'>
       <div class='user-profile'>
-        <div class='user-nickname'>
+        <h1 class='profile-title'>プロフィール</h1>
+        <div class='user-info'>
+          <%= "ニックネーム： #{@user.nickname}" %>
         </div>
-        <div class='user-gender'>
+        <div class='user-info'>
+          <%= "性別： #{@user.gender}" %>
         </div>
-        <div class='user-age'>
+        <div class='user-info'>
+          <%= "年齢： #{@user.age}" %>
         </div>
-        <div class='user-height'>
+        <div class='user-info'>
+          <%= "身長： #{@user.height}cm" %>
         </div>
-        <div class='user-weight'>
+        <div class='user-info'>
+          <%= "体重： #{@user.weight}kg" %>
         </div>
       </div>
       <div class='user-metabolism'>
