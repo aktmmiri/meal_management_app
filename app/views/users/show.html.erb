@@ -33,7 +33,21 @@
         <li class='tab'><%= "#{@user.nickname}のお気に入り一覧" %></li>
       </ul>
       <div class='main-meals'>
-        <div class='tab-box box-show'>あ</div>
+        <div class='tab-box box-show'>
+          <ul class='user-meals-list'>
+            <% @meals.each do |meal| %>
+              <li class='user-meal'>
+                <%= link_to meal_path(meal.id), class: "user-meal-link" do %>
+                <div class='user-meal-image-content'>
+                  <%= image_tag meal.image, class:"user-meal-image" %>
+                </div>
+                <div class='user-meal-content'><%= meal.name %></div>
+                <div class='user-meal-content'><%= meal.created_at.strftime("投稿日：%Y年%m月%d日") %></div>
+                <% end %>
+              </li>
+            <% end %>
+          </ul>
+        </div>
         <div class='tab-box'>い</div>
       </div>
     </div>
