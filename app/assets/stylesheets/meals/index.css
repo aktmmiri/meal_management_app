@@ -43,6 +43,7 @@
   width: 80%;
   height: calc( 100% - 500px );
   margin: 0 auto;
+  border-bottom: 1px dotted #222222;
 }
 
 .list{
@@ -52,12 +53,12 @@
   display: flex;
   margin: 50px 0;
   padding-bottom: 20px;
-  border-bottom: 2px solid #222222;
 }
 
 .list-left {
   width: 50%;
   height: 100%;
+  align-items: center;
   text-align: center;
 }
 
@@ -73,18 +74,20 @@
 
 .list-right {
   width: 50%;
+  height: 100%;
 }
 
 .meal-name {
   font-size: 30px;
   color: #222222;
-  padding-top: 20px;
   border-bottom: 8px double #222222;
 }
 
 .meal-info {
+  height: 100%;
   font-size: 20px;
   color: #222222;
-  padding-top: 20px;
+  padding: 10px 0;
+  overflow: scroll;
 }
 /* /一覧表示 */
