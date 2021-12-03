@@ -114,6 +114,7 @@
   color: #fff;
   text-decoration: none;
   font-size: 35px;
+  cursor: pointer;
 }
 
 .show-delete {
@@ -131,6 +132,7 @@
   color: #222222;
   text-decoration: none;
   font-size: 35px;
+  cursor: pointer;
 }
 
 .show-fifth-content {
