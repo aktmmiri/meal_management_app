@@ -127,17 +127,18 @@
 }
 
 .register-btn {
-  width: 50%;
-  margin: 0 auto;
+  width: 40%;
+  margin: 25px auto;
+  text-align: center;
+  background-color: #FF773E;
+  border-radius: 20px;
+  border-bottom: solid 4px #FF4F02;
 }
 
 .register-red-btn {
-  width: 100%;
-  background: #FF6928;
-  border: 1px solid #FF6928;
+  font-size: 35px;
   color: #fff;
-  line-height: 48px;
-  font-size: 14px;
+  border: none;
+  background-color: #FF773E;
   cursor: pointer;
-  margin: 30px 0;
 }
