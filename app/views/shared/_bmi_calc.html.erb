@@ -1,0 +1,4 @@
+<% height_m = user.height.to_f / 100
+   bmi_calc = user.weight / (height_m ** 2)
+%>
+<%= "BMI： #{bmi_calc.round}" %>

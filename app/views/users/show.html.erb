@@ -24,7 +24,16 @@
           <%= link_to "編集", "#", class:'edit-btn' %>
         </div>
       </div>
-      <div class='user-metabolism'>
+      <div class='user-metabolism-calc'>
+        <div class='user-metabolism'>
+          <%= render partial: "shared/metabolism_calc", locals: {user: @user} %>
+        </div>
+        <div class='user-metabolism'>
+          <%= render partial: "shared/bmi_calc", locals: {user: @user} %>
+        </div>
+        <div class='user-metabolism'>
+          <%= render partial: "shared/standared_weight_calc", locals: {user: @user} %>
+        </div>
       </div>
     </div>
     <div class='main-contents'>
