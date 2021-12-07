@@ -36,6 +36,9 @@
       </div>
     </div>
   </div>
+  <div class='star-btn' id="favorite_<%= @meal.id %>">
+    <%= render partial: "shared/favorite", locals: { meal: @meal } %>
+  </div>
   <% if current_user.id == @meal.user_id %>
   <div class='show-forth-content'>
     <div class='show-edit'>

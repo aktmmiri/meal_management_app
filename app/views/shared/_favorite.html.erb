@@ -1,0 +1,11 @@
+<% if !Favorite.where(user_id: current_user.id, meal_id: meal.id).exists? %>
+  <%= link_to meal_favorites_path(meal.id), method: :post, remote: true, class:"favorite-btn" do %>
+    <i class="far fa-star star-icon1"></i>
+  <% end %>
+  <span class="star-count"><%= meal.favorites.count %></span>
+<% else %>
+  <%= link_to meal_favorite_path(meal_id: meal.id, id: meal.favorites[0].id), method: :delete, remote: true, class:"favorite-btn" do %>
+    <i class="fas fa-star star-icon2"></i>
+  <% end %>
+  <span class="star-count"><%= meal.favorites.count %></span>
+<% end %>
