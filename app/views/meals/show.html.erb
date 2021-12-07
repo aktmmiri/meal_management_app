@@ -13,6 +13,9 @@
     <div class='show-date'>
       <%= @meal.created_at.strftime("投稿日：%Y年%m月%d日") %>
     </div>
+    <div class='show-date'>
+      <%= @meal.updated_at.strftime("更新日：%Y年%m月%d日") %>
+    </div>
     <div class='show-info-contents'>
       <div class='show-info-left'>
         <div class='show-table'>
@@ -44,6 +47,10 @@
     <div class='show-delete'>
     <%= link_to "削除", meal_path(@meal.id), method: :delete, class:'delete-btn' %>
     </div>
+  </div>
+  <% else %>
+  <div class='star-btn' id="favorite_<%= @meal.id %>">
+    <%= render partial: "shared/favorite", locals: { meal: @meal } %>
   </div>
   <% end %>
   <div class='show-fifth-content'>

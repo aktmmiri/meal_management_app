@@ -1,24 +1,15 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+| 記述すること                                  | 備考                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | 
+| :-------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | 
+| アプリケーション名                            | MealManagement                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | 
+| アプリケーション概要                          | 食事内容をシェアし、自分の食事を振り返ることができる。<br>また、自分の身長や体重から基礎代謝、BMI、標準体重を算出して表示することで、基準からどれくらい離れているかを確認でき、健康管理への意欲を沸かせることができる。                                                                                                                                                                                                                                                                      | 
+| URL                                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | 
+| テスト用アカウント                            |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | 
+| 利用方法                                      | 1.トップページのヘッダーからユーザー新規登録を行う。<br>2.ヘッダーの新規投稿ボタンから食事内容(食事名、説明、画像、食事の量(g)、カロリー(kcal)、時間帯)を入力し投稿する。<br>3.一覧ページから食事内容をクリックして、食事内容の詳細を確認し、気になったらお気に入り登録する。<br>4.ヘッダーのニックネームボタンからマイページに遷移する。<br>5.マイページで自分の基礎代謝、BMI、標準体重を確認できる。<br>6.マイページで自分が投稿した食事内容一覧とお気に入り登録した食事内容一覧を確認できる。 | 
+| アプリケーションを作成した背景                | 学生時代に食事制限をせず運動のみで痩せようと試みたところ、効果があまり出なかった。<br>そこで食事管理の大切さに気付き、まずは自分の食事内容を見直すところから始めるべきだという仮説を立てた。<br>また、食事内容を公開することで他人に見られることを意識して怠惰な食生活を送らないように心がけると推測し、自分の食事内容を記録して見返せるようなメモ機能と、公開して他人が見られるようにして他人に見られることを意識できるようなアプリケーションを開発することにした。                             | 
+| 洗い出した要件                                | https://docs.google.com/spreadsheets/d/1r58QP0DEslGvaYiDJfZW6BGBvSxBfelKLFD04wPVa_Q/edit?usp=sharing                                                                                                                                                                                                                                                                                                                                                                                             | 
+| 実装した機能についての画像やGIFおよびその説明 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | 
+| 実装予定の機能                                | 現在、お気に入り登録機能実装中。今後はコメント投稿機能やカロリー検索機能の実装を予定している。                                                                                                                                                                                                                                                                                                                                                                                                   | 
+| データベース設計                              | [![Image from Gyazo](https://i.gyazo.com/f417db1fc4f1a0ea96278f8cef0238c9.jpg)](https://gyazo.com/f417db1fc4f1a0ea96278f8cef0238c9)                                                                                                                                                                                                                                                                                                                                                              | 
+| 画面遷移図                                    | [![Image from Gyazo](https://i.gyazo.com/a69463ca045b7b98b4eed5d81448ce64.jpg)](https://gyazo.com/a69463ca045b7b98b4eed5d81448ce64)                                                                                                                                                                                                                                                                                                                                                              | 
+| 開発環境                                      | ・フロントエンド：HTML,CSS / jQuery<br>・バックエンド：Ruby(ver 2.6.5) / Ruby on Rails(ver 6.0.4)<br>・インフラ：MySQL<br>・テスト：RSpec<br>・テキストエディタ：Visual Studio Code<br>・タスク管理：GitHub                                                                                                                                                                                                                                                                                      | 
+| ローカルでの動作方法                          | 以下のコマンドを順番に実行してください<br>% git clone https://github.com/aktmmiri/meal_management_app.git<br>% cd meal_management_app<br>% bundle install<br>% yarn install                                                                                                                                                                                                                                                                                                                      | 
