@@ -36,9 +36,6 @@
       </div>
     </div>
   </div>
-  <div class='star-btn' id="favorite_<%= @meal.id %>">
-    <%= render partial: "shared/favorite", locals: { meal: @meal } %>
-  </div>
   <% if current_user.id == @meal.user_id %>
   <div class='show-forth-content'>
     <div class='show-edit'>
@@ -47,6 +44,10 @@
     <div class='show-delete'>
     <%= link_to "削除", meal_path(@meal.id), method: :delete, class:'delete-btn' %>
     </div>
+  </div>
+  <% else %>
+  <div class='star-btn' id="favorite_<%= @meal.id %>">
+    <%= render partial: "shared/favorite", locals: { meal: @meal } %>
   </div>
   <% end %>
   <div class='show-fifth-content'>
