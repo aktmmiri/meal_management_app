@@ -1,0 +1,6 @@
+$('#favorite_<%= @meal.id %>').html(
+  `<%= link_to meal_favorites_path(@meal.id), method: :post, remote: true, class:"favorite-btn" do %>
+    <i class="far fa-star star-icon1"></i>
+  <% end %>
+  <span class="star-count"><%= @meal.favorites.count %></span>`
+);
