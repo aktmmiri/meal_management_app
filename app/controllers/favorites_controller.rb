@@ -8,8 +8,10 @@ class FavoritesController < ApplicationController
   end
 
   def destroy
-    @favorite = Favorite.find_by(user_id: current_user.id, meal_id: @meal.id)
-    @favorite.destroy
+    if @meal.user_id != current_user.id
+      @favorite = Favorite.find_by(user_id: current_user.id, meal_id: @meal.id)
+      @favorite.destroy
+    end
   end
 
   private
