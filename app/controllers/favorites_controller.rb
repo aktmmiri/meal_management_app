@@ -2,9 +2,7 @@ class FavoritesController < ApplicationController
   before_action :set_meal
 
   def create
-    if @meal.user_id != current_user.id
-      @favorite = Favorite.create(user_id: current_user.id, meal_id: @meal.id)
-    end
+    @favorite = Favorite.create(user_id: current_user.id, meal_id: @meal.id) if @meal.user_id != current_user.id
   end
 
   def destroy
