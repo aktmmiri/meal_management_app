@@ -6,6 +6,7 @@ class User < ApplicationRecord
 
   has_many :meals
   has_many :favorites, dependent: :destroy
+  has_many :comments, dependent: :destroy
 
   with_options presence: true do
     validates :nickname
