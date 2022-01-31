@@ -20,6 +20,8 @@ class MealsController < ApplicationController
   end
 
   def show
+    @comment = Comment.new
+    @comments = @meal.comments.includes(:user)
   end
 
   def edit

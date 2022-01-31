@@ -54,9 +54,23 @@
   </div>
   <% end %>
   <div class='show-fifth-content'>
-    <div class='show-comment-left'>
+    <% if user_signed_in? && (current_user.id != @meal.user_id) %>
+    <div class='show-comment-top'>
+      <%= form_with model: [@meal, @comment], url: meal_comments_path(@meal.id), local: true do |f| %>
+        <%= f.text_field :text, placeholder: "コメント", class: "comment-text" %>
+        <%= f.submit "コメントする", class: "comment-btn" %>
+      <% end %>
     </div>
-    <div class='show-comment-right'>
+    <% end %>
+    <div class='show-comment-bottom'>
+      <div class='comment-list-title'>コメント一覧</div>
+      <% @comments.each do |comment| %>
+      <div class='comment-list'>
+        <span class='comment-text'>
+          <%= link_to comment.user.nickname, user_path(comment.user_id) %>:<%= comment.text %>
+        </span>
+      </div>
+      <% end %>
     </div>
   </div>
 </div>
