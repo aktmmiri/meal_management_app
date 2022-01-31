@@ -3,7 +3,11 @@ class CommentsController < ApplicationController
 
   def create
     comment = Comment.new(comment_params)
-    redirect_to meal_path(comment.meal.id)
+    if comment.save
+      redirect_to meal_path(comment.meal.id)
+    else
+      render "meals/show"
+    end
   end
 
   private
