@@ -21,6 +21,7 @@ class MealsController < ApplicationController
 
   def show
     @comment = Comment.new
+    @comments = @meal.comments.includes(:user)
   end
 
   def edit

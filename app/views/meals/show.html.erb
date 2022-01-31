@@ -63,6 +63,14 @@
     </div>
     <% end %>
     <div class='show-comment-bottom'>
+      <div class='comment-list-title'>コメント一覧</div>
+      <% @comments.each do |comment| %>
+      <div class='comment-list'>
+        <span class='comment-text'>
+          <%= link_to comment.user.nickname, user_path(comment.user_id) %>:<%= comment.text %>
+        </span>
+      </div>
+      <% end %>
     </div>
   </div>
 </div>

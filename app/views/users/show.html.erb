@@ -69,7 +69,7 @@
                 <div class='user-meal-content'><%= favorite.name %></div>
                 <div class='user-meal-content'><%= "投稿者：#{favorite.user.nickname}" %></div>
                 <div class='user-meal-content'><%= favorite.created_at.strftime("投稿日：%Y年%m月%d日") %></div>
-                <div class='user-meal-content'><%= meal.updated_at.strftime("更新日：%Y年%m月%d日") %></div>
+                <div class='user-meal-content'><%= favorite.updated_at.strftime("更新日：%Y年%m月%d日") %></div>
                 <% end %>
               </li>
             <% end %>
